@@ -5,10 +5,10 @@ return [
     // These CSS rules will be applied after the regular template CSS
 
     /*
-        'css' => [
-            '.button-content .button { background: red }',
-        ],
-    */
+    'css' => [
+    '.button-content .button { background: red }',
+    ],
+     */
 
     'colors' => [
 
@@ -17,21 +17,23 @@ return [
 
     ],
 
-    'view' => [
+    'view'   => [
         'senderName'  => null,
         'reminder'    => null,
         'unsubscribe' => null,
         'address'     => null,
 
         'logo'        => [
-            'path'   => '%PUBLIC%/vendor/beautymail/assets/images/sunny/logo.png',
-            'width'  => '',
-            'height' => '',
+            'display' => false,
+            'text'    => '',
+            'path'    => '%PUBLIC%/vendor/beautymail/assets/images/sunny/logo.png',
+            'width'   => '',
+            'height'  => '',
         ],
 
-        'twitter'  => null,
-        'facebook' => null,
-        'flickr'   => null,
+        'twitter'     => null,
+        'facebook'    => null,
+        'flickr'      => null,
     ],
 
 ];
