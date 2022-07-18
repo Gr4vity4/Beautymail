@@ -151,7 +151,7 @@ body {
   background: #f6f4f5; }
 
 .title {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, arial, sans-serif;
   font-size: 18px;
   color: #333333;
   text-align: left;
@@ -161,7 +161,7 @@ body {
   text-align: center; }
 
 .paragraph {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
   color: #666666;
   text-align: left;

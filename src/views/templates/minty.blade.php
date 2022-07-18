@@ -61,7 +61,7 @@
 											@if($logo['display'])
 											<a href="#"><img src="{{ array_key_exists('path', $logo) ? $logo['path'] : '' }}" alt="{{ isset($senderName) ? $senderName : '' }}" width="{{ array_key_exists('width', $logo) ? $logo['width'] : '' }}" height="{{ array_key_exists('height', $logo) ? $logo['height'] : '' }}" border="0" style="display:block; border:none; outline:none; text-decoration:none;" st-image="edit" class="logo"></a>
 											@else
-											<a href="#">{{ $logo['text'] }}</a>
+											<a href="#" style="color: {{ Config::get('beautymail.colors.logoText', '#004cad') }}; text-decoration: none; font-size: 20px">{{ $logo['text'] }}</a>
 											@endif
 										</div>
 									</td>
