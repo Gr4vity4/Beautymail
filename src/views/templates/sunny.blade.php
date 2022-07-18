@@ -34,7 +34,7 @@
 										@if($logo['display'])
                                         <img class="mobile_only mobile-logo" border="0" src="{{ array_key_exists('path', $logo) ? $logo['path'] : '' }}" alt="{{ isset($senderName) ? $senderName : '' }}" width="{{ isset($logo) ? array_key_exists('width', $logo) ? $logo['width'] : '' : '' }}" height="{{ isset($logo) ? array_key_exists('height', $logo) ? $logo['height'] : '' : '' }}" />
 										@else
-										<span style="font-size: 38px">{{ $logo['text'] }}</span>
+										<span style="font-size: 38px; color: {{ Config::get('beautymail.colors.logoText', '#004cad') }}">{{ $logo['text'] }}</span>
 										@endif
                                     </td>
                                     <td class="w40" width="40"></td>
@@ -54,7 +54,11 @@
 								<tr>
 									<td class="w30" width="30"></td>
 									<td id="logo" width="{{ array_key_exists('width', $logo) ? $logo['width'] : '' }}" valign="top" align="center">
+										@if($logo['display'])
 										<img border="0" src="{{ array_key_exists('path', $logo) ? $logo['path'] : '' }}" alt="{{ isset($senderName) ? $senderName : ''}}" width="{{ array_key_exists('width', $logo) ? $logo['width'] : '' }}" height="{{ array_key_exists('height', $logo) ? $logo['height'] : '' }}" />
+										@else
+										<span style="font-size: 38px; color: {{ Config::get('beautymail.colors.logoText', '#004cad') }}">{{ $logo['text'] }}</span>
+										@endif
 									</td>
 									<td class="w30" width="30"></td>
 								</tr>
