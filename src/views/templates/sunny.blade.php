@@ -31,7 +31,11 @@
                                 <tr class="mobile_only">
                                     <td class="w40" width="40"></td>
                                     <td class="w560" width="560" valign="top" align="center">
+										@if($logo['display'])
                                         <img class="mobile_only mobile-logo" border="0" src="{{ array_key_exists('path', $logo) ? $logo['path'] : '' }}" alt="{{ isset($senderName) ? $senderName : '' }}" width="{{ isset($logo) ? array_key_exists('width', $logo) ? $logo['width'] : '' : '' }}" height="{{ isset($logo) ? array_key_exists('height', $logo) ? $logo['height'] : '' : '' }}" />
+										@else
+										<span style="font-size: 38px">{{ $logo['text'] }}</span>
+										@endif
                                     </td>
                                     <td class="w40" width="40"></td>
                                 </tr>
